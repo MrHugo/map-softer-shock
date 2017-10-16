@@ -1,3 +1,32 @@
+/* Nice animated bubbles */
+
+.lol {
+	margin: 42% auto;
+	padding: 5px 20px;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+
+#bubble-first {
+  margin: 21% auto;
+}
+
+.bubble-pop {
+	width: 30%;
+	height: auto;
+	padding: 5px 20px;
+	border: 1px solid #ccc;
+	border-radius: 5%;
+}
+
+.bubble-left {
+  margin-left: 5%;
+}
+
+.bubble-right {
+  margin-right: calc(95% - 30%);
+}
+
 /* Map */
 
 .map-container {
@@ -18,8 +47,8 @@
   content:"";
 }
 
-.map-container:after:hover {
-  
+.map-container:hover:after {
+  content: "make after: hoverable";
 }
 
 /* Tabs */

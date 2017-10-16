@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/aos.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
@@ -11,10 +12,22 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
+        <div id="bubble-first" class="bubble-pop" data-aos="zoom-in" data-aos-offset="0" data-aos-easing="ease-in-sine" data-aos-duration="600">
+          <h2>What is iGEM ?</h2>
+          <p>
+            iGEM stands for International Genetically Engendered
+            Machine, it is an international synthetic biology
+            competition, bringing together teams from around the
+            world at the MIT (Massachusetts Institute of Technology)
+            in Boston. The iGEM classifies projects according to their
+            originality and feasibility.
+          </p>
+        </div>
+
         <h2>Map</h2>
         <div class="map-container"></div>
 
-        <!-- Generate all this shit dynamically in the future-->
+        <!-- Generate all this shit dynamically in the future with a tabs array<string> -->
         <div class="tabs-container row">
           <div class="tabs-menu">
             <div class="button-container col-md-3">
@@ -30,10 +43,18 @@
               <button class="tablinks" onclick="openTab(event, 'applications')">Application</button>
             </div>
           </div>
-          <div id="survey" class="tabcontent"></div>
-          <div id="regulation" class="tabcontent"></div>
-          <div id="safety" class="tabcontent"></div>
-          <div id="applications" class="tabcontent"></div>
+          <div id="survey" class="tabcontent">
+            <h3>Please select a country on the map</h3>
+          </div>
+          <div id="regulation" class="tabcontent">
+            <h3>Please select a country on the map</h3>
+          </div>
+          <div id="safety" class="tabcontent">
+            <h3>Please select a country on the map</h3>
+          </div>
+          <div id="applications" class="tabcontent">
+            <h3>Please select a country on the map</h3>
+          </div>
         </div>
 
       </div>
@@ -41,11 +62,15 @@
   </div>
 </body>
 
-<script src="http://d3js.org/d3.v4.min.js"></script>
-<script src="http://d3js.org/queue.v1.min.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="./js/d3.v4.min.js"></script>
+<script src="./js/queue.v1.min.js"></script>
+<script src="./js/topojson.v1.min.js"></script>
 <script src="./js/d3-tip.js"></script>
+<script src="./js/aos.js"></script>
 <script src="./js/tabs.js"></script>
 <script src="./js/map.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>
