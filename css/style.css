@@ -3,10 +3,11 @@
 #bubble-first {
   margin: 20% auto;
   background-color: #2a6ebb;
+  width: 50%;
 }
 
 .bubble-pop {
-	width: 50%;
+  width: 100%;
 	height: auto;
   margin-bottom: 250px;
   padding: 10px 20px;
@@ -25,12 +26,10 @@
 }
 
 .bubble-left {
-  margin-left: 5%;
   background-color: #2a6ebb;
 }
 
-.bubble-right {
-  margin-left: 45%;
+.bubble-right {  
   background-color: #ffa438;
 }
 
