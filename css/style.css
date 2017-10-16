@@ -43,7 +43,7 @@
 }
 
 .map-container:after {
-  background-image: url('../arrow-down.png');
+  background-image: url('../pictures/arrow-down.png');
   background-size: 60px auto;
   background-repeat: no-repeat;
   width: 100px;
