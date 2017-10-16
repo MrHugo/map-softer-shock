@@ -1,17 +1,43 @@
-/* Nice animated bubbles */
+/* Random */
 
-#bubble-first {
-  margin: 20% auto;
-  background-color: #2a6ebb;
-  width: 50%;
+html, body {
+  height: 100%;
 }
+
+h2 {
+  text-align: center;
+}
+
+
+/* Background */
+
+.img-header {
+    background-image: url("../pictures/ionis-paris-team.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ribbon2 {
+  background-color: #550099;
+}
+
+#ribbon5 {
+  background-color: #ff7b7b;
+}
+
+.ribbon {
+  margin-bottom: 250px;
+  padding: 80px 3%;
+}
+
+/* Nice animated bubbles */
 
 .bubble-pop {
   width: 100%;
 	height: auto;
-  margin-bottom: 250px;
   padding: 10px 20px;
-	border: 1px solid #ccc;
 	border-radius: 10px;
   color: #fff;
 }
@@ -26,22 +52,28 @@
 }
 
 .bubble-left {
+  border: 1px solid #2a6ebb;
   background-color: #2a6ebb;
 }
 
-.bubble-right {  
+.bubble-right {
+  border: 1px solid #ffa438;
   background-color: #ffa438;
 }
 
 /* Map */
 
-.map-container {
+.map-container h2 {
+  font-size: 42px;
+}
+
+.worldmap {
   position: relative;
   margin: 42px 0;
   border: 1px solid #ccc;
 }
 
-.map-container:after {
+.worldmap:after {
   background-image: url('../pictures/arrow-down.png');
   background-size: 60px auto;
   background-repeat: no-repeat;
@@ -53,7 +85,7 @@
   content:"";
 }
 
-.map-container:hover:after {
+.worldmap:hover:after {
   content: "make after: hoverable";
 }
 
@@ -119,12 +151,6 @@
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
-}
-
-/* Random */
-
-h2 {
-  text-align: center;
 }
 
 /* D3 tooltips */

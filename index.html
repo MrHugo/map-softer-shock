@@ -9,28 +9,35 @@
 </head>
 
 <body>
+  <div class="img-header"></div>
   <div class="container-fluid">
-    <div class="row">
+    <div class="bubbles-container row">
       <div class="col-md-12">
-        <div id="bubble-first" class="bubble-pop" data-aos="zoom-in" data-aos-offset="0" data-aos-easing="ease-in-sine" data-aos-duration="600">
-          <h2>What is iGEM ?</h2>
-          <div class="bubble-text">
-            <p>
-              iGEM stands for International Genetically Engendered Machine, it is an international
-              synthetic biology competition, bringing together teams from around the world at the
-              MIT (Massachusetts Institute of Technology) in Boston.
-              The iGEM classifies projects according to their originality and feasibility.
-            </p>
+        <div id="ribbon1" class="ribbon row">
+          <div class="col-md-6">
+            <div class="bubble-pop bubble-left" data-aos="zoom-in" data-aos-offset="0" data-aos-easing="ease-in-sine" data-aos-duration="600">
+              <h2>What is iGEM ?</h2>
+              <div class="bubble-text">
+                <p>
+                  iGEM stands for International Genetically Engendered Machine, it is an international
+                  synthetic biology competition, bringing together teams from around the world at the
+                  MIT (Massachusetts Institute of Technology) in Boston.
+                  The iGEM classifies projects according to their originality and feasibility.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
           </div>
         </div>
       </div>
       <div class="col-md-12">
-        <div class="row">
+        <div id="ribbon2" class="ribbon row">
           <div class="col-md-6">
 
           </div>
           <div class="col-md-6">
-            <div class="bubble-pop bubble-right" data-aos="zoom-in" data-aos-offset="0" data-aos-easing="ease-in-sine" data-aos-duration="600">
+            <div class="bubble-pop bubble-right" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine" data-aos-duration="600">
               <h2>iGEM IONIS</h2>
               <div class="bubble-text">
                 <p>
@@ -50,9 +57,9 @@
         </div>
       </div>
       <div class="col-md-12">
-        <div class="row">
+        <div id="ribbon3" class="ribbon row">
           <div class="col-md-6">
-            <div class="bubble-pop bubble-left" data-aos="zoom-in" data-aos-offset="0" data-aos-easing="ease-in-sine" data-aos-duration="600">
+            <div class="bubble-pop bubble-left" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine" data-aos-duration="600">
               <h2>What is SOFTER SHOCK ?</h2>
               <div class="bubble-text">
                 <p>
@@ -73,12 +80,12 @@
         </div>
       </div>
       <div class="col-md-12">
-        <div class="row">
+        <div id="ribbon4" class="ribbon row">
           <div class="col-md-6">
 
           </div>
           <div class="col-md-6">
-            <div class="bubble-pop bubble-right" data-aos="zoom-in" data-aos-offset="0" data-aos-easing="ease-in-sine" data-aos-duration="600">
+            <div class="bubble-pop bubble-right" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine" data-aos-duration="600">
               <h2>What is Human Practises</h2>
               <div class="bubble-text">
                 <p>
@@ -94,9 +101,9 @@
         </div>
       </div>
       <div class="col-md-12">
-        <div class="row">
+        <div id="ribbon5" class="ribbon row">
           <div class="col-md-6">
-            <div class="bubble-pop bubble-left" data-aos="zoom-in" data-aos-offset="0" data-aos-easing="ease-in-sine" data-aos-duration="600">
+            <div class="bubble-pop bubble-left" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine" data-aos-duration="600">
               <h2>Why is the map so important to us ?</h2>
               <div class="bubble-text">
                 <p>
@@ -122,8 +129,10 @@
     </div>
 
     <div class="col-md-12">
-      <h2>Map</h2>
-      <div class="map-container"></div>
+      <div class="map-container">
+        <h2>Map</h2>
+        <div class="worldmap"></div>
+      </div>
 
       <!-- Generate all this shit dynamically in the future with a tabs array<string> -->
       <div class="tabs-container row">
