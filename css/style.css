@@ -8,23 +8,83 @@ h2 {
   text-align: center;
 }
 
+.darken {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+}
 
-/* Background */
+/* Header */
 
 .img-header {
+    position: relative;
     background-image: url("../pictures/ionis-paris-team.jpg");
     height: 100%;
+    margin-bottom: 60px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.scroll-arrow {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 30px)
+}
+
+.scroll-arrow:hover {
+  width: 70px;
+  bottom: 5px;
+  left: calc(50% - 35px)
+}
+
+.img-header img {
+  filter: brightness(300%);
+}
+
+.img-header:after {
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: 1%;
+  content:"";
+}
+
+/* Background */
+/*
 #ribbon2 {
-  background-color: #550099;
+  background-color: #6d3798;
+}
+
+#ribbon3 {
+  background-color: #ffe5c4;
+
+#ribbon4 {
+  background-color: #a4d4ff;
+}
 }
 
 #ribbon5 {
   background-color: #ff7b7b;
+}/**/
+
+#ribbon2 {
+  background-color: #d1e8ff;
+}
+
+#ribbon3 {
+  background-color: #ffd29a;
+}
+
+#ribbon4 {
+  background-color: #d1e8ff;
+}
+
+#ribbon5 {
+  background-color: #ffd29a;
 }
 
 .ribbon {
@@ -71,22 +131,6 @@ h2 {
   position: relative;
   margin: 42px 0;
   border: 1px solid #ccc;
-}
-
-.worldmap:after {
-  background-image: url('../pictures/arrow-down.png');
-  background-size: 60px auto;
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: calc(50% - 30px);
-  bottom: 1%;
-  content:"";
-}
-
-.worldmap:hover:after {
-  content: "make after: hoverable";
 }
 
 /* Tabs */
