@@ -54,48 +54,85 @@ h2 {
 }
 
 /* Background */
+/*
+#ribbon2 {
+  background-color: #6d3798;
+}
 
-.slide {
+#ribbon3 {
+  background-color: #ffe5c4;
+
+#ribbon4 {
+  background-color: #a4d4ff;
+}
+}
+
+#ribbon5 {
+  background-color: #ff7b7b;
+}/**/
+
+#ribbon2 {
+  background-color: #d1e8ff;
+}
+
+#ribbon3 {
+  background-color: #ffd29a;
+}
+
+#ribbon4 {
+  background-color: #d1e8ff;
+}
+
+#ribbon5 {
+  background-color: #ffd29a;
+}
+
+.ribbon {
+  margin-bottom: 250px;
+  padding: 80px 3%;
+}
+
+/* Nice animated bubbles */
+
+.bubble-pop {
   width: 100%;
-  height: 100%;
+	height: auto;
+  padding: 10px 20px;
+	border-radius: 10px;
+  color: #fff;
 }
 
-#slide2 {
-  background-color: #d1e8ff;
+.bubble-pop h2 {
+  font-size: 42px;
 }
 
-#slide3 {
-  background-color: #ffd29a;
+.bubble-pop .bubble-text {
+  padding: 60px 60px;
+  font-size: 22px;
 }
 
-#slide4 {
-  background-color: #d1e8ff;
+.bubble-left {
+  border: 1px solid #2a6ebb;
+  background-color: #2a6ebb;
 }
 
-#slide5 {
-  background-color: #ffd29a;
+.bubble-right {
+  border: 1px solid #ffa438;
+  background-color: #ffa438;
 }
-
-#slide6 {
-  background-color: #d1e8ff;
-}
-
-/* Nice animated pictures */
-
-.picture {}
 
 /* Map */
 
 .map-container h2 {
   font-size: 42px;
 }
-/*
+
 .worldmap {
   position: relative;
   margin: 42px 0;
   border: 1px solid #ccc;
 }
-*/
+
 /* Tabs */
 
 .tabs-container {
