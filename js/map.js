@@ -57,6 +57,7 @@ function ready(error, data) {
     countries.some(c => {
       if (c === d.properties.name) {
         getContent(d.properties.name);
+        moveDown('.main')
         return true;
       }
     });
@@ -100,11 +101,8 @@ function getContent(country) {
     var parser = new DOMParser()
     var htmlContent = parser.parseFromString(this.responseText, "text/xml");
 
-    console.log(htmlContent);
-
     document.getElementById('survey').innerHTML= htmlContent.getElementsByClassName('survey')[0].innerHTML;
     document.getElementById('regulation').innerHTML= htmlContent.getElementsByClassName('regulation')[0].innerHTML;
-    document.getElementById('safety').innerHTML= htmlContent.getElementsByClassName('safety')[0].innerHTML;
     document.getElementById('applications').innerHTML= htmlContent.getElementsByClassName('applications')[0].innerHTML;
   };
   xhr.send();
