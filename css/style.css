@@ -4,8 +4,23 @@ html, body {
   height: 100%;
 }
 
-h2 {
-  text-align: center;
+.slide-content {
+  padding: 5% 5%;
+}
+
+.slide-content h2 {
+  font-size: 42px;
+  margin-bottom: 5%;
+}
+
+.slide-content p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 22px;
+}
+
+.slide-content .citation {
+  margin-bottom: 15px;
 }
 
 .darken {
