@@ -1,4 +1,6 @@
-document.getElementById("defaultOpen").click()
+function selectDefaultTab() {
+  document.getElementById("defaultOpen").click()
+}
 
 function openTab(evt, name) {
     var i, tabcontent, tablinks;

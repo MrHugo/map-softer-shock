@@ -4,7 +4,6 @@ var height = 500;
 var format = d3.format(",");
 var path = d3.geoPath();
 
-// Set tooltips
 var tip = d3.tip()
 .attr('class', 'd3-tip')
 .offset([-10, 0])
@@ -57,7 +56,7 @@ function ready(error, data) {
     countries.some(c => {
       if (c === d.properties.name) {
         getContent(d.properties.name);
-        moveDown('.main')
+        moveDown('.main');
         return true;
       }
     });

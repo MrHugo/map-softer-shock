@@ -86,20 +86,14 @@ h2 {
 
 /* Map */
 
-.map-container h2 {
-  font-size: 42px;
+.map-container {
+  width: 100;
+  height: auto;
 }
-/*
-.worldmap {
-  position: relative;
-  margin: 42px 0;
-  border: 1px solid #ccc;
-}
-*/
+
 /* Tabs */
 
 .tabs-container {
-  margin: 42px 0;
 }
 
 .button-container {
