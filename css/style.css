@@ -1,3 +1,33 @@
+/* Splash screen*/
+
+.splash-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 42;
+  background-color: #fff;
+}
+
+#spinner {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  -webkit-animation: rotation 1.75s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
 /* Random */
 
 html, body {
@@ -28,7 +58,7 @@ html, body {
 
 .header {
   position: relative;
-  background-image: url("../pictures/ionis-paris-team.jpg");
+  background-image: url("../pictures/header/ionis-paris-team.jpg");
   height: 100%;
   color: #fff;
   margin-bottom: 60px;
