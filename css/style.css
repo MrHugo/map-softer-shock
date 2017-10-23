@@ -39,6 +39,10 @@ html, body {
   padding: 5% 5%;
 }
 
+.slide-content .citation {
+  margin-bottom: 15px;
+}
+
 .slide-content h2 {
   font-size: 42px;
   margin-bottom: 5%;
@@ -50,9 +54,16 @@ html, body {
   font-size: 22px;
 }
 
-.slide-content .citation {
-  margin-bottom: 15px;
+@media screen and (max-width: 1023px) {
+  .slide-content h2 {
+    font-size: 32px;
+  }
+
+  .slide-content p {
+    font-size: 14px;
+  }
 }
+
 
 /* Header */
 
@@ -138,7 +149,7 @@ color: #0B97C6;
 }
 
 #slide3 {
-  background-color: #ffd29a;
+  background-color: #fff;
 }
 
 #slide4 {
@@ -155,22 +166,64 @@ color: #0B97C6;
 
 /* Nice animated pictures */
 
-section {
-	transition-delay:.2s;
+.animate-zoom {
+  transition: all 200ms ease-in;
+  transform: scale(0);
+}
+
+.animate-appear {
+  opacity: 0;
+}
+
+.animate-right-side {
+  transform:translate3d(200%, 0, 0);
+}
+
+.animate-left-side {
+  transform:translate3d(-200%, 0, 0);
 }
 
 #slide2 .pictures-container img {
   width: 60%;
-  margin-left: 20%;
   transition: transform .6s .9s;
 }
 
-#slide2 .pictures-container .animate-left-side {
-  transform:translate3d(200%, 0, 0);
+#slide2 #logo-igem img {
+  margin-left: 20%;
+  transition-delay: 0.5s;
+}
+
+#slide2 #jamboree img {
+  width: 42%;
+  transition-delay: 0.9s;
+}
+
+@media screen and (max-width: 991px) {
+  #slide2 #logo-igem img {
+    margin-top: 5%;
+  }
+
+  #slide2 #jamboree img {
+    display: none;
+  }
+}
+
+#slide3 .pictures-container img {
+  transition: opacity 2s;
+}
+
+#slide3 #logo-igem-ionis img {
+  width: 90%;
+  transition-delay: 1s;
 }
 
 .viewing-page-2 #slide2 .pictures-container img {
   transform: translate3d(0, 0, 0) !important;
+  transform: scale(1) !important;
+}
+
+.viewing-page-3 #slide3 .pictures-container img {
+  opacity: 1 !important;
 }
 
 /* Map */
