@@ -56,7 +56,7 @@ html, body {
 
 /* Header */
 
-.header {
+.first-page-header {
   position: relative;
   background-image: url("../pictures/header/ionis-paris-team.jpg");
   height: 100%;
@@ -88,11 +88,11 @@ color: #0B97C6;
 }
 */
 
-.header h1 {
+.first-page-header h1 {
   margin-top: 5%;
 }
 
-.header .footer {
+.first-page-header .first-page-footer {
   position: absolute;
   bottom: 100px;
   left: 50%;
@@ -155,19 +155,22 @@ color: #0B97C6;
 
 /* Nice animated pictures */
 
-.picture {
+section {
+	transition-delay:.2s;
+}
+
+#slide2 .pictures-container img {
+  margin-left: 15%;
+
   transition: transform .6s .9s;
 }
 
-.lol {
-  transform:translate3d(-40%, 0, 0);
+#slide2 .pictures-container .left-side {
+  transform:translate3d(200%, 0, 0);
 }
 
-.slide-content .picture {
-  display: block;
-  width: 50%;
-  margin: auto;
-  transform: translate3d(0, 0, 0);
+.viewing-page-2 #slide2 .pictures-container img {
+  transform: translate3d(0, 0, 0) !important;
 }
 
 /* Map */
