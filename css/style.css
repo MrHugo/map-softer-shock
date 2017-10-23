@@ -160,12 +160,12 @@ section {
 }
 
 #slide2 .pictures-container img {
-  margin-left: 15%;
-
+  width: 60%;
+  margin-left: 20%;
   transition: transform .6s .9s;
 }
 
-#slide2 .pictures-container .left-side {
+#slide2 .pictures-container .animate-left-side {
   transform:translate3d(200%, 0, 0);
 }
 
@@ -303,9 +303,6 @@ section {
   top: 50%;
   left: 100%;
 }
-
-pointer-events:none;
-}*/
 
 .details{
   color:white;
