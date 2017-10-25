@@ -34,6 +34,10 @@ html, body {
   height: 100%;
 }
 
+#slide2 {
+  color: #000;
+}
+
 .slide-content {
   height: 100%;
   padding: 5% 5%;
@@ -69,24 +73,31 @@ html, body {
 
 .first-page-header {
   position: relative;
-  background-image: url("../pictures/header/ionis-paris-team.jpg");
   height: 100%;
   color: #fff;
   margin-bottom: 60px;
   text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.darken {
+.darken, .brighten {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #000;
   opacity: 0.6;
+}
+
+.brighten {
+  opacity: 0.8;
+}
+
+.darken {
+  background-color: #000;
+}
+
+.brighten {
+  background-color: #f8f2e8;
 }
 
 /*
@@ -144,8 +155,18 @@ color: #0B97C6;
   height: 100%;
 }
 
+#slide1 {
+  background-image: url("../pictures/header/ionis-paris-team.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #slide2 {
-  background-color: #d1e8ff;
+  background-image: url("../pictures/igem-2/jamboree.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #slide3 {
@@ -162,6 +183,10 @@ color: #0B97C6;
 
 #slide6 {
   background-color: #d1e8ff;
+}
+
+.jamboree-background {
+  /* general style slide here */
 }
 
 /* Nice animated pictures */
