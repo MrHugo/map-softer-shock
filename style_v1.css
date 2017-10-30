@@ -1,0 +1,266 @@
+/* Random */
+
+html, body {
+  height: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.darken {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+/* Header */
+
+.img-header {
+    position: relative;
+    background-image: url("../pictures/ionis-paris-team.jpg");
+    height: 100%;
+    margin-bottom: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scroll-arrow {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 30px)
+}
+
+.scroll-arrow:hover {
+  width: 70px;
+  bottom: 5px;
+  left: calc(50% - 35px)
+}
+
+.img-header img {
+  filter: brightness(300%);
+}
+
+.img-header:after {
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: 1%;
+  content:"";
+}
+
+/* Background */
+/*
+#ribbon2 {
+  background-color: #6d3798;
+}
+
+#ribbon3 {
+  background-color: #ffe5c4;
+
+#ribbon4 {
+  background-color: #a4d4ff;
+}
+}
+
+#ribbon5 {
+  background-color: #ff7b7b;
+}/**/
+
+#ribbon2 {
+  background-color: #d1e8ff;
+}
+
+#ribbon3 {
+  background-color: #ffd29a;
+}
+
+#ribbon4 {
+  background-color: #d1e8ff;
+}
+
+#ribbon5 {
+  background-color: #ffd29a;
+}
+
+.ribbon {
+  margin-bottom: 250px;
+  padding: 80px 3%;
+}
+
+/* Nice animated bubbles */
+
+.bubble-pop {
+  width: 100%;
+	height: auto;
+  padding: 10px 20px;
+	border-radius: 10px;
+  color: #fff;
+}
+
+.bubble-pop h2 {
+  font-size: 42px;
+}
+
+.bubble-pop .bubble-text {
+  padding: 60px 60px;
+  font-size: 22px;
+}
+
+.bubble-left {
+  border: 1px solid #2a6ebb;
+  background-color: #2a6ebb;
+}
+
+.bubble-right {
+  border: 1px solid #ffa438;
+  background-color: #ffa438;
+}
+
+/* Map */
+
+.map-container h2 {
+  font-size: 42px;
+}
+
+.worldmap {
+  position: relative;
+  margin: 42px 0;
+  border: 1px solid #ccc;
+}
+
+/* Tabs */
+
+.tabs-container {
+  margin: 42px 0;
+}
+
+.button-container {
+  padding: 0;
+}
+
+.tabs-menu {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    color: #fff;
+    font-weight: bold;
+    background-color: #2a6ebb;
+}
+
+.tabs-menu button {
+    width: 100%;
+    background-color: #2a6ebb;
+    float: left;
+    border: none;
+    border-top: 5px solid #2a6ebb;
+    outline: none;
+    cursor: pointer;
+    padding: 42px 0;
+    transition: 0.3s;
+}
+
+.tabs-menu button:hover {
+    background-color: #ffa438;
+    border-top: 5px solid #ffa438;
+}
+
+.tabs-menu button.active {
+    border-top: 5px solid #ffa438;
+    border-left: 1px solid #2c5dad;
+    border-right: 1px solid #2c5dad;
+    background-color: #1a5ebb;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* D3 tooltips */
+
+.names {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+.d3-tip {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family:"avenir next", Arial, sans-serif;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFA500;
+  border-radius: 1px;
+  pointer-events: none;
+}
+
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 8px;
+  width: 100%;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  pointer-events: none;
+
+}
+
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+.d3-tip.e:after {
+  content: "\25C0";
+  margin: -4px 0 0 0;
+  top: 50%;
+  left: -8px;
+}
+
+.d3-tip.s:after {
+  content: "\25B2";
+  margin: 0 0 1px 0;
+  top: -8px;
+  left: 0;
+  text-align: center;
+}
+
+.d3-tip.w:after {
+  content: "\25B6";
+  margin: -4px 0 0 -1px;
+  top: 50%;
+  left: 100%;
+}
+
+pointer-events:none;
+}*/
+
+.details{
+  color:white;
+}
