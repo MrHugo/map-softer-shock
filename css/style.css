@@ -35,7 +35,31 @@ html, body {
 }
 
 #slide2 {
-  color: #000;
+  color: #0495C4;
+}
+
+#slide3 {
+  color: #0495C4;
+}
+
+#slide4 {
+  color: #FFF;
+}
+
+#slide5 {
+  color: #FFF;
+}
+
+#slide6 {
+  color: #FFF;
+}
+
+.ancreMap {
+  color: #fff;
+}
+
+.ancreMap :hover{
+  color: #F9F3E8;
 }
 
 .slide-content {
@@ -58,6 +82,24 @@ html, body {
   font-size: 22px;
 }
 
+@font-face {
+  font-family: 'RobotoSlab-Light';
+  src: url('../fonts/RobotoSlab-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'BebasNeue-Bold';
+  src: url('../fonts/BebasNeue-Bold.woff2') format('woff2');
+}
+
+h1, h2, h3, h4 {
+  font-family: "BebasNeue-Bold", Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-family: "RobotoSlab-Light", Helvetica, Arial, sans-serif;
+}
+
 @media screen and (max-width: 1023px) {
   .slide-content h2 {
     font-size: 32px;
@@ -74,7 +116,7 @@ html, body {
 .first-page-header {
   position: relative;
   height: 100%;
-  color: #fff;
+  color: #F9F3E8;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -121,6 +163,18 @@ color: #0B97C6;
   width: 90%;
 }
 
+.logo-igem-animated{
+  width: 200%;
+  margin-top: 50%;
+  margin-left: 50%;
+}
+
+.MapMonde {
+  width: 200%;
+  margin-top: 50%;
+  margin-left: 1200%;
+}
+
 .logo-softer-shock { /* picture ?*/
   display: block;
   width: 180px;
@@ -134,18 +188,18 @@ color: #0B97C6;
 }
 
 .scroll-arrow img {
-  width: 60px;
+  width: 100px;
   height: auto;
   position: absolute;
-  bottom: 10px;
-  left: calc(50% - 30px);
-  filter: brightness(300%);
+  bottom: 25px;
+  left: calc(50% - 50px);
+  /*filter: brightness(300%);*/
 }
 
 .scroll-arrow img:hover {
-  width: 70px;
-  bottom: 5px;
-  left: calc(50% - 35px)
+  width: 120px;
+  bottom: 20px;
+  left: calc(50% - 60px)
 }
 
 /* Background */
@@ -174,15 +228,16 @@ color: #0B97C6;
 }
 
 #slide4 {
-  background-color: #d1e8ff;
+  background-color: #0495C4;
+
 }
 
 #slide5 {
-  background-color: #ffd29a;
+  background-color: #F59D36;
 }
 
 #slide6 {
-  background-color: #d1e8ff;
+  background-color: #0495C4;
 }
 
 .jamboree-background {
@@ -238,7 +293,7 @@ color: #0B97C6;
 }
 
 #slide3 #logo-igem-ionis img {
-  width: 90%;
+  width: 100%;
   transition-delay: 1s;
 }
 
