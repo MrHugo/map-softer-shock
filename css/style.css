@@ -108,7 +108,7 @@ p {
 #slide1 {
   position: relative;
   height: 100%;
-  color: #F9F3E8;  
+  color: #F9F3E8;
   text-align: center;
 }
 
@@ -170,13 +170,27 @@ p {
   position: absolute;
   bottom: 25px;
   left: calc(50% - 50px);
-  /*filter: brightness(300%);*/
 }
 
 .scroll-arrow img:hover {
   width: 120px;
   bottom: 20px;
   left: calc(50% - 60px)
+}
+
+/* Slide 5 */
+
+#slide5 .pic {
+  border-radius: 50%;
+}
+
+#slide5 h2, #slide5 p {
+  color: #7e131a;
+}
+
+#igem-week {
+  width: 60%;
+  margin-left: 5%;
 }
 
 /* Background */
@@ -209,11 +223,11 @@ p {
 }
 
 #slide5 {
-  background-color: #F59D36;
+  background-color: #F7F2E9;
 }
 
 #slide6 {
-  background-color: #0495C4;
+  background-color: #F59D36;
 }
 
 /* Nice animated pictures */
