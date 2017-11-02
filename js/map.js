@@ -11,11 +11,6 @@ var tip = d3.tip()
   return "<strong>Country: </strong><span class='details'>" + d.properties.name + "<br></span>" + "</span>";
 })
 
-var color = d3.scaleThreshold()
-.domain([10000,100000,500000,1000000,5000000,10000000,50000000,100000000,500000000,1500000000])
-.range(["rgb(247,251,255)", "rgb(222,235,247)", "rgb(198,219,239)", "rgb(158,202,225)", "rgb(107,174,214)", "rgb(66,146,198)","rgb(33,113,181)","rgb(8,81,156)","rgb(8,48,107)","rgb(3,19,43)"]);
-
-
 var svg = d3.select(".worldmap")
 .append("svg")
 .attr("viewBox", "0 0 960 500")
@@ -45,7 +40,20 @@ function ready(error, data) {
   .data(data.features)
   .enter().append("path")
   .attr("d", path)
-  .style("fill", function(d) { return color(6000000); }) // color
+  .style("fill", function(d) {
+    let isHightlight = false;
+    countries.forEach(c => {
+      if (c === d.properties.name) {
+        isHightlight = true;
+      }
+    });
+    if (!isHightlight) {
+      return 'rgb(158, 202, 255)';
+    }
+    else {
+      return 'rgb(66,146,198)';
+    }
+  })
   .style('stroke', 'white')
   .style('stroke-width', 1.5)
   .style("opacity",0.8)
