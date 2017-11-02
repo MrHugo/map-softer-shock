@@ -108,8 +108,7 @@ p {
 #slide1 {
   position: relative;
   height: 100%;
-  color: #F9F3E8;
-  margin-bottom: 60px;
+  color: #F9F3E8;  
   text-align: center;
 }
 
@@ -142,7 +141,7 @@ p {
   margin-top: 30px;
 }
 
-.logo-igem-animated, .worldmap {
+.logo-igem-animated, .mini-worldmap {
   width: 50%;
 }
 
