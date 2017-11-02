@@ -54,14 +54,6 @@ html, body {
   color: #FFF;
 }
 
-.ancreMap {
-  color: #fff;
-}
-
-.ancreMap :hover{
-  color: #F9F3E8;
-}
-
 .slide-content {
   height: 100%;
   padding: 5% 5%;
@@ -113,7 +105,7 @@ p {
 
 /* Header */
 
-.first-page-header {
+#slide1 {
   position: relative;
   height: 100%;
   color: #F9F3E8;
@@ -142,40 +134,26 @@ p {
   background-color: #f8f2e8;
 }
 
-/*
-.text-orange {
-color: #F59D19;
-}
-
-.text-blue {
-color: #0B97C6;
-}
-*/
-
-.first-page-header h1 {
+.#slide1 h1 {
   margin-top: 5%;
 }
 
-.first-page-header .first-page-footer {
+.logos-header {
+  margin-top: 30px;
+}
+
+.logo-igem-animated, .worldmap {
+  width: 50%;
+}
+
+.first-page-footer {
   position: absolute;
   bottom: 100px;
   left: 50%;
   width: 90%;
 }
 
-.logo-igem-animated{
-  width: 200%;
-  margin-top: 50%;
-  margin-left: 50%;
-}
-
-.MapMonde {
-  width: 200%;
-  margin-top: 50%;
-  margin-left: 1200%;
-}
-
-.logo-softer-shock { /* picture ?*/
+.logo-softer-shock {
   display: block;
   width: 180px;
   text-align: center;
@@ -229,7 +207,6 @@ color: #0B97C6;
 
 #slide4 {
   background-color: #0495C4;
-
 }
 
 #slide5 {
@@ -238,10 +215,6 @@ color: #0B97C6;
 
 #slide6 {
   background-color: #0495C4;
-}
-
-.jamboree-background {
-  /* general style slide here */
 }
 
 /* Nice animated pictures */
