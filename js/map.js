@@ -98,7 +98,7 @@ function ready(error, data) {
 
 function getContent(country) {
   var xhr= new XMLHttpRequest();
-  xhr.open('GET', 'tabs-content/' + country + '.html', true);
+  xhr.open('GET', 'tabs-content/' + country + '-intro.html', true);
   xhr.onreadystatechange= function() {
 
     if (this.readyState !== 4 && this.status !== 200)
@@ -107,9 +107,21 @@ function getContent(country) {
     var parser = new DOMParser()
     var htmlContent = parser.parseFromString(this.responseText, "text/xml");
 
-    document.getElementById('survey').innerHTML= htmlContent.getElementsByClassName('survey')[0].innerHTML;
-    document.getElementById('regulation').innerHTML= htmlContent.getElementsByClassName('regulation')[0].innerHTML;
-    document.getElementById('applications').innerHTML= htmlContent.getElementsByClassName('applications')[0].innerHTML;
+    console.log(htmlContent);
+
+    var link = "<a id='link' target='_blank' href='https://softer-shock-map.herokuapp.com/tabs-content/"; + country + ".html'><h2>Click here for more informations !</h2></a>";
+
+    document.getElementById('survey').innerHTML= htmlContent.getElementsByClassName('survey')[0].innerHTML +
+    link + "survey/" + country + ".html'>Click here for more informations !</a>";
+    document.getElementById('regulation').innerHTML= htmlContent.getElementsByClassName('regulation')[0].innerHTML +
+    link + "regulation/" + country + ".html'>Click here for more informations !</a>";
+    document.getElementById('applications').innerHTML= htmlContent.getElementsByClassName('applications')[0].innerHTML +
+    link + "application/" + country + ".html'>Click here for more informations !</a>";
+
+    document.getElementById('link').setAttribute("style", "margin-top: 50px;");
+    document.getElementById('link').setAttribute("style", "margin: auto;");
+    document.getElementById('link').setAttribute("style", "display: block;");
+
   };
   xhr.send();
 }
