@@ -109,7 +109,7 @@ function getContent(country) {
 
     console.log(htmlContent);
 
-    var link = "<a id='link' target='_blank' href='https://softer-shock-map.herokuapp.com/tabs-content/"; + country + ".html'><h2>Click here for more informations !</h2></a>";
+    var link = "<h2><a id='link' target='_blank' href='https://softer-shock-map.herokuapp.com/tabs-content/"; + country + ".html'>Click here for more informations !</a></h2>";
 
     document.getElementById('survey').innerHTML= htmlContent.getElementsByClassName('survey')[0].innerHTML +
     link + "survey/" + country + ".html'>Click here for more informations !</a>";
