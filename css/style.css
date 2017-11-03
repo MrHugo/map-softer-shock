@@ -1,3 +1,21 @@
+/* Retina display */
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .tabs-menu button {
+    padding: 20px 0 !important;
+  }
+
+  .slide-content h2 {
+    font-size: 32px;
+  }
+
+  .slide-content p {
+    font-size: 14px;
+  }
+}
+
 /* Splash screen*/
 
 .splash-screen {
@@ -182,6 +200,12 @@ p {
   left: calc(50% - 60px)
 }
 
+/* Slide 4 */
+
+.resume-softer-shock {
+  margin-left: 30px;
+}
+
 /* Slide 5 */
 
 #slide5 .pic {
@@ -236,9 +260,13 @@ p {
 
 /* Nice animated pictures */
 
-.animate-zoom {
+.animate-zoom, .animate-zoom-slow {
   transition: all 200ms ease-in;
   transform: scale(0);
+}
+
+.animate-zoom-slow {
+  transition: all 450ms ease-in;
 }
 
 .animate-appear {
@@ -268,6 +296,10 @@ p {
   transition-delay: 0.9s;
 }
 
+#slide4 #softershock-struct img {
+  transition-delay: 0.5s;
+}
+
 @media screen and (max-width: 991px) {
   #slide2 #logo-igem img {
     margin-top: 5%;
@@ -294,6 +326,10 @@ p {
 
 .viewing-page-3 #slide3 .pictures-container img {
   opacity: 1 !important;
+}
+
+.viewing-page-4 #slide4 #softershock-struct img {
+  transform: scale(1) !important;
 }
 
 /* Map */
