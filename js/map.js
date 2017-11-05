@@ -102,26 +102,39 @@ function getContent(country) {
   xhr.onreadystatechange= function() {
 
     if (this.readyState !== 4 && this.status !== 200)
-      return;
+    return;
 
     var parser = new DOMParser()
     var htmlContent = parser.parseFromString(this.responseText, "text/xml");
 
-    console.log(htmlContent);
+    var link = "<a id='link' class='link' target='_blank' href='https://softer-shock-map.herokuapp.com/tabs-content/"; + country + ".html'>Click here for more informations !</a>";
 
-    var link = "<h2><a id='link' target='_blank' href='https://softer-shock-map.herokuapp.com/tabs-content/"; + country + ".html'>Click here for more informations !</a></h2>";
+    if (typeof(htmlContent) != undefined) {
+      document.getElementById('survey').innerHTML= link + "survey/" + country + ".html'<a>Click here to access complete information !</a>" +
+      htmlContent.getElementsByClassName('survey')[0].innerHTML;
 
-    document.getElementById('survey').innerHTML= htmlContent.getElementsByClassName('survey')[0].innerHTML +
-    link + "survey/" + country + ".html'>Click here for more informations !</a>";
-    document.getElementById('regulation').innerHTML= htmlContent.getElementsByClassName('regulation')[0].innerHTML +
-    link + "regulation/" + country + ".html'>Click here for more informations !</a>";
-    document.getElementById('applications').innerHTML= htmlContent.getElementsByClassName('applications')[0].innerHTML +
-    link + "application/" + country + ".html'>Click here for more informations !</a>";
+      document.getElementById('regulation').innerHTML= link + "regulation/" + country + ".html'<a>Click here to access complete information !</a>" +
+      htmlContent.getElementsByClassName('regulation')[0].innerHTML;
 
-    document.getElementById('link').setAttribute("style", "margin-top: 50px;");
-    document.getElementById('link').setAttribute("style", "margin: auto;");
-    document.getElementById('link').setAttribute("style", "display: block;");
+      document.getElementById('applications').innerHTML= link + "application/" + country + ".html'<a>Click here to access complete information !</a>" +
+      htmlContent.getElementsByClassName('applications')[0].innerHTML;
+    }
 
+    var buttons = document.querySelectorAll('.link');
+
+    for (var i=0; i < buttons.length; i++) {
+      console.log(buttons[i]);
+      buttons[i].setAttribute("style", "margin-bottom: 50px;");
+      buttons[i].setAttribute("style", "margin: auto;");
+      buttons[i].setAttribute("style", "display: block;");
+      buttons[i].setAttribute("style", "font-size: 22px");
+
+      if (buttons[i].href.indexOf('survey') != -1) {
+        if (buttons[i].href.indexOf('Brazil') == -1 & buttons[i].href.indexOf('France') == -1 & buttons[i].href.indexOf('Mexico') == -1) {
+          buttons[i].parentNode.removeChild(buttons[i]);
+        }
+      }
+    }
   };
   xhr.send();
 }

@@ -1,5 +1,6 @@
 function moveToMap() {
-  for (var i = 0; i < 6; i++) {
+  var mapIndex = 6;
+  for (var i = 0; i < mapIndex; i++) {
     moveDown('.main');
   }
 }
